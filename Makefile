@@ -8,4 +8,4 @@ build-prod:
 	python setup.py py2app
 
 run:
-	open -a dist/groove.app
+	open dist/groove.app
