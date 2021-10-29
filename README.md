@@ -7,9 +7,14 @@ There is already the more complete [SomaFM Radio Player](https://apps.apple.com/
 ![Screenshot](/screenshot.png)
 
 ## Building
+
+Groove uses libVLC to play the stream, so it requires the [VLC](https://www.videolan.org) player to be installed.
+
+Then build using
 ```bash
 > python3 -m venv venv
 > source venv/bin/activate
 > pip install -r requirements
 > make build-prod
 ``` 
+and you'll find `groove.app` in the `dist` directory.
