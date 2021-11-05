@@ -21,14 +21,9 @@ Groove uses libVLC to play the stream, so it requires the [VLC player](https://w
 ### Build
 Then build using
 ```bash
-> pip3 install -r requirements.txt
-> make build-prod
+> make build
 ``` 
 and you'll find `groove.app` in the `dist` directory.
 
 ### Install
-Just do
-```bash
-> open dist
-```
-then drag `groove.app` to your Applications folder.
+It's a Mac app, so just drag `groove.app` to your Applications folder.

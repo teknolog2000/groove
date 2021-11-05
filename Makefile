@@ -1,11 +1,16 @@
 clean:
 	rm -rf build dist
 
-build-dev:
+build-dev: dependencies
 	python3 setup.py py2app -A
+	open dist
 
-build-prod:
+build: dependencies
 	python3 setup.py py2app
+	open dist
+
+dependencies:
+	pip install -r requirements.txt
 
 run:
 	open dist/groove.app
