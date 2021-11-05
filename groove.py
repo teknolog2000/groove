@@ -16,6 +16,7 @@ class GrooveApp(rumps.App):
         self.player = None
 
         menu = [rumps.MenuItem(s, callback=self.menu_click) for s in STREAMS]
+        menu.append(None)
         super(GrooveApp, self).__init__('Groove App', menu=menu, icon='stop.png', template=True)
 
     def vlc_event(self, event, stream_name):
@@ -24,6 +25,10 @@ class GrooveApp(rumps.App):
         self.icon = 'play.png' if playing else 'stop.png'
 
         for m in self.menu:
+            # need to ignore the separator
+            if type(self.menu[m]) != rumps.MenuItem:
+                continue
+
             self.menu[m].state = playing and self.menu[m].title == stream_name
 
     # i haven't found a better way to set the initial menu state to -1
@@ -37,8 +42,6 @@ class GrooveApp(rumps.App):
         self.start_stream(DEFAULT_STREAM)
 
     def menu_click(self, sender):
-        print(sender.title)
-
         if sender.state == 0:
             sender.state = -1
             self.start_stream(sender.title)
