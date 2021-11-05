@@ -14,9 +14,10 @@ Currently supports these streams
 Groove is built with Python, and uses [py2app](https://py2app.readthedocs.io/en/latest/) to turn it into a Mac .app executable. There is no pre-built and signed binary, so you'll have to build it locally yourself.
 
 ### Get dependencies
-You'll need Python3, which you can get [from python.org](https://www.python.org/downloads/) (although I prefer to use use [Homebrew](https://brew.sh) to install it.
+You'll need these dependencies to build
 
-Groove uses libVLC to play the stream, so it requires the [VLC player](https://www.videolan.org)to be installed.
+* [Python 3](https://www.python.org/downloads/)
+* [VLC player](https://www.videolan.org) which provides libVLC
 
 ### Build
 Then build using
