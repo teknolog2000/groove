@@ -10,7 +10,7 @@ build: dependencies
 	open dist
 
 dependencies:
-	pip install -r requirements.txt
+	pip3 install -r requirements.txt
 
 run:
 	open dist/groove.app
