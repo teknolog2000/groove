@@ -4,8 +4,8 @@ import vlc
 DEFAULT_STREAM = 'Groove Salad'
 
 STREAMS = {
-    DEFAULT_STREAM: 'https://ice4.somafm.com/groovesalad-128-mp3',
-    'Chillsky': 'http://hyades.shoutca.st:8043/stream'
+    DEFAULT_STREAM: 'https://ice2.somafm.com/groovesalad-64-aac',
+    'Chillsky': 'https://chill.radioca.st/stream'
 }
 
 
