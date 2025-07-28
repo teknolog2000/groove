@@ -28,3 +28,6 @@ and you'll find `groove.app` in the `dist` directory.
 
 ### Install
 It's a Mac app, so just drag `groove.app` to your Applications folder.
+
+## Error OSError: dlopen(/System/Library/Carbon.framework/Carbon)
+Read here: https://github.com/jaredks/rumps/issues/208#issuecomment-1817662981

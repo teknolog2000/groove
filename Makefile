@@ -1,16 +1,15 @@
+.PHONY: clean build-dev build run
+
 clean:
 	rm -rf build dist
 
-build-dev: dependencies
-	python3 setup.py py2app -A
+build-dev:
+	uv run setup.py py2app -A
 	open dist
 
-build: dependencies
-	python3 setup.py py2app
+build:
+	uv run setup.py py2app
 	open dist
-
-dependencies:
-	pip3 install -r requirements.txt
 
 run:
 	open dist/groove.app

@@ -3,7 +3,7 @@ from setuptools import setup
 APP = ['groove.py']
 DATA_FILES = ['play.png', 'stop.png']
 OPTIONS = {
-    'argv_emulation': True,
+    'argv_emulation': False,
     'plist': {
         'CFBundleShortVersionString': '0.1.0',
         'LSUIElement': True,
